@@ -1,0 +1,2 @@
+# React useEffect Infinite Loop Bug
+This repository demonstrates a common bug in React's `useEffect` hook where an infinite loop occurs due to a missing dependency in the dependency array. The bug occurs because the `setInterval` function is not cleaned up properly and continues to update the state even after the component unmounts, leading to an infinite rendering loop. The solution includes adding the state variable 'count' to the dependency array to fix the issue.
